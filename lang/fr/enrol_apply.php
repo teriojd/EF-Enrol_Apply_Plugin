@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+$string['confirm_enrol'] = 'Êtes-vous sûr(e) de vouloir vous inscrire à cette formation?';
 $string['expirynotifyall'] = 'Enseignant et utilisateur inscrit';
 $string['expirynotifyenroller'] = 'Enseignant uniquement';
 

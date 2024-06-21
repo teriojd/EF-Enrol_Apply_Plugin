@@ -86,7 +86,14 @@ class enrol_apply_apply_form extends moodleform {
 
         $mform->setDefaults((array)$USER);
 
-        $this->add_action_buttons(false, get_string('enrolme', 'enrol_self'));
+        $attributes = ['class' => 'confirmation']; 
+		$mform->addElement('submit', 'submitbutton', get_string('enrolme', 'enrol_self'), $attributes); 
+		$mform->closeHeaderBefore('submitbutton');
+        // $this->add_action_buttons(false, get_string('enrolme', 'enrol_self'));
+
+		global $PAGE;
+		$PAGE->requires->js(new moodle_url('/enrol/apply/js/confirmation.js'));
+		$PAGE->requires->string_for_js('confirm_enrol', 'enrol_apply');
 
         $mform->addElement('hidden', 'id');
         $mform->setType('id', PARAM_INT);

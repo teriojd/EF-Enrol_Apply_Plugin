@@ -23,6 +23,7 @@
  */
 
 // The name of your plug-in. Displayed on admin menus.
+$string['confirm_enrol'] = 'Are you sure you want to register for this training?';
 $string['enrolname'] = 'Course enrol confirmation';
 $string['pluginname'] = 'Course enrol confirmation';
 $string['pluginname_desc'] = 'With this plug-in users can apply to be enrolled in a course. A teacher or site manager will then have to approve the enrolment before the user gets enroled.';
